@@ -372,10 +372,7 @@ class RIR_Core():
 			currentObj = api.MFnDagNode(objDagPath)
 			currentParent = currentObj.parent(0) #returns MObject
 			currentTransform = api.MFnTransform(currentParent)
-			oT = api.MTransformationMatrix()
-			oT.setTranslation(currentTransform.translation(1), 1)
-			oT.setRotation(currentTransform.rotation())
-			oT.setScale(currentTransform.scale(), 1)
+			oT = api.MTransformationMatrix(currentTransform.transformation())
 			self.oldTransforms.append(oT)
 
 			selectionIterator.next()
@@ -551,10 +548,7 @@ class RIR_Core():
 			currentObj = api.MFnDagNode(objectPaths[i])
 			currentParent = currentObj.parent(0) #returns MObject
 			currentTransform = api.MFnTransform(currentParent)
-			oT = api.MTransformationMatrix()
-			oT.setTranslation(currentTransform.translation(1), 1)
-			oT.setRotation(currentTransform.rotation())
-			oT.setScale(currentTransform.scale(), 1)
+			oT = api.MTransformationMatrix(currentTransform.transformation())
 			self.oldTransforms.append(oT)
 
 			currentTransform.setTransformation(self.calcRndTransformation(currentTransform.transformation() ,settings, i))
@@ -830,7 +824,15 @@ class RIR_MUI:
 		self.RIRCore.resetTransforms()
 
 	def on_B_Apply_clicked(self):
-		self.RIRCore.applyTransforms(self.currentSettings)
+		modifiers = QtWidgets.QApplication.keyboardModifiers()
+		if(modifiers == QtCore.Qt.AltModifier):
+			print("ALT")
+			self.on_B_Reset_clicked()
+			self.on_B_RandomSeed_clicked()
+			self.RIRCore.applyTransforms(self.currentSettings)
+		else:
+			self.RIRCore.applyTransforms(self.currentSettings)
+
 
 	#=== Bind events to corresponding functions ===
 	def bindUIFunctions(self):
