@@ -1,5 +1,5 @@
 # RealismIsRandom
-This is my second tool for Maya. It should work in Maya 2015, 2016(not tested) and 2017.
+This is my second tool for Maya. It works in Maya 2015, 2016(not tested) and 2017.
 It applys random transformations to the selected objects.
 
 # How to install:
