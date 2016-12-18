@@ -1,1 +1,2 @@
 # RealismIsRandom
+How to install:
