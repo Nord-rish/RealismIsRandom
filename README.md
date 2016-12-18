@@ -3,9 +3,8 @@ This is my second tool for Maya. It should work in Maya 2015, 2016(not tested) a
 It applys random transformations to the selected objects.
 
 # How to install:
-1. Download as .zip.
+1. Download [current version](https://raw.githubusercontent.com/Notminor/RealismIsRandom/master/RealismIsRandom_1.0.2.zip).
 2. Extract to User/Documents/maya/MAYAVERSION/scripts/
-3. Rename the folder "RealismIsRandom-master" to "RealismIsRandom"
 
 # How to use:
 1. Drag and Drop the RIR_Start.mel file into your open maya scene or copy and paste the code into a shelf button.
