@@ -15,8 +15,9 @@ It applys random transformations to the selected objects.
 5. As long as you don't change the selection you can undo the transforms with the Reset Transform button.
 
 # Notes:
-1. Scale is additive for now.
-2. Transformations done with this tool are not undoable with Ctrl+Z you need to use the button.
+1. Holding ALT while clicking Apply Transform uses the alternative action. Resetting the last transfrom, generating a new random seed and applying new transforms.
+2. Scale is additive for now.
+3. Transformations done with this tool are not undoable with Ctrl+Z you need to use the button.
 
 # TODO:
 1. Integrate into maya undo so that it works with Ctrl+Z
