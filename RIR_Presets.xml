@@ -1,0 +1,30 @@
+<data>
+	<preset>
+		<name>Default</name>
+		<applyTo>
+			<x>True</x>
+			<y>True</y>
+			<z>True</z>
+		</applyTo>
+		<rndSeed>1234</rndSeed>
+		<rndScale>1.0</rndScale>
+		<locationSettings>
+			<Enabled>True</Enabled>
+			<Clamp>False</Clamp>
+			<RndMin>-1.0</RndMin>
+			<RndMax>1.0</RndMax>
+		</locationSettings>
+		<rotationSettings>
+			<Enabled>True</Enabled>
+			<Clamp>False</Clamp>
+			<RndMin>-1.0</RndMin>
+			<RndMax>1.0</RndMax>
+		</rotationSettings>
+		<scaleSettings>
+			<Enabled>True</Enabled>
+			<Clamp>False</Clamp>
+			<RndMin>-1.0</RndMin>
+			<RndMax>1.0</RndMax>
+		</scaleSettings>
+	</preset>
+</data>

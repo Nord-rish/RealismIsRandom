@@ -1,0 +1,6 @@
+python ("import sys");
+python ("from pymel.core import *");
+python ("sys.path.append(internalVar(usd = True) + 'RealismIsRandom')");
+python ("import RIR");
+python ("reload(RIR)");
+python ("RIR.startRIR()");
