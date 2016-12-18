@@ -826,7 +826,6 @@ class RIR_MUI:
 	def on_B_Apply_clicked(self):
 		modifiers = QtWidgets.QApplication.keyboardModifiers()
 		if(modifiers == QtCore.Qt.AltModifier):
-			print("ALT")
 			self.on_B_Reset_clicked()
 			self.on_B_RandomSeed_clicked()
 			self.RIRCore.applyTransforms(self.currentSettings)
