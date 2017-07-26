@@ -874,8 +874,8 @@ class RIR_MUI:
 						defaultButton = 'OK',
 						cancelButton = 'Cancel',
 						dismissString = 'Cancel')
-		if result == 'Cancel':
-			event.ignore() #ignores the close of the window
-
+		if result == 'OK':
 			self.RIRCore.removeCallbacks()
 			closeRIR(self)
+		else:
+			event.ignore() #ignores the close of the window
